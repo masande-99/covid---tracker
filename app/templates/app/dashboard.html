@@ -1,0 +1,47 @@
+{% extends 'app/main.html' %}
+{% load static %}
+{% block content %}
+
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">MI7</h5>
+            <p class="card-text">{{departments}}</p>
+            <a href="http://127.0.0.1:8000/QA_team_records/" class="btn btn-primary">Go to results</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"> DATA TEAM </h5>
+            <p class="card-text">{{departments1}}</p>
+            <a href="http://127.0.0.1:8000/Data_team_records/" class="btn btn-primary">Go to results</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"> DEVELOPMENT </h5>
+            <p class="card-text">{{departments2}}</p>
+            <a href="http://127.0.0.1:8000/Development_records/" class="btn btn-primary">Go to results</a>
+          </div>
+        </div>
+      </div>
+
+     <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"> TOTAL NUMBER OF RECORDS </h5>
+            <p class="card-text">{{totalresults}}</p>
+            <a href="http://127.0.0.1:8000/results/" class="btn btn-primary">Go to results</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'app/main.html' %}
+{% load static %}
+
+
+{% block content %}
+      <div style="background-image: url('/images/softsure_logo.jpg'); background-repeat: no-repeat;">
+        <div style="width:215px; margin: 0 auto;" class="container form form-row"  >
+          <form method="POST" action="">
+              {% csrf_token %}
+              {{form}}
+            <input type="submit" value="Submit" class="btn btn-dark">
+          </form>
+        </div>
+      </div>
+{% endblock %}
